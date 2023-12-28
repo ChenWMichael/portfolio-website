@@ -1,0 +1,107 @@
+.navigationbar {
+  background: rgb(30, 30, 30);
+  height: 4rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.yearText {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-left: 2rem;
+  border: 2px solid white;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopMenuListItem:hover {
+  color: gold;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid gold;
+}
+
+.contactButton {
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+}
+
+.contactButton:hover {
+  color: gold;
+  border: 2px solid gold;
+}
+
+.contactButtonImg {
+  fill: currentColor;
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.active {
+  color: gold;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid gold;
+}
+
+.mobileMenu {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+
+.navMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+.ListItem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width: 720px) {
+  .mobileMenu {
+    display: flex;
+    display: flex;
+    object-fit: cover;
+    height: 1.8rem;
+    position: absolute;
+    right: 15px;
+  }
+  .desktopMenu {
+    display: none;
+  }
+  .contactButton {
+    display: none;
+  }
+}
