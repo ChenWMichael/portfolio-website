@@ -43,7 +43,7 @@
 .skillBarImg {
   object-fit: scale-down;
   height: 4rem;
-  width: 4rem;
+  max-width: 3.5rem;
   margin-right: 2rem;
 }
 

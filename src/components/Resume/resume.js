@@ -16,7 +16,7 @@ const Resume = () => {
     <section id="resume">
       <h1 className="resumeTitle">My Resume</h1>
       <a
-        href="/Michael_Chen_resume_2024.pdf"
+        href="/Michael_Chen_resume_portfolio.pdf"
         download="My_Resume.pdf"
         className="downloadLink"
       >
@@ -25,7 +25,7 @@ const Resume = () => {
       {windowWidth >= 840 && (
         <div className="resumeDisplay">
           <iframe
-            src="/Michael_Chen_resume_2024.pdf"
+            src="/Michael_Chen_resume_portfolio.pdf"
             title="My Resume"
             width="50%"
             height="600px"

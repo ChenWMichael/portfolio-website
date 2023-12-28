@@ -5,6 +5,7 @@ import LC4_Stamp from "./Stamps/lc4 stamp.png";
 import Battleship_Stamp from "./Stamps/battleship stamp.png";
 import Syzygy_Stamp from "./Stamps/syzygy_stamp.png";
 import Handshake_Stamp from "./Stamps/handshake stamp.png";
+import Portfolio_Stamp from "../Intro/Logo.PNG";
 
 const Works = () => {
   return (
@@ -23,6 +24,14 @@ const Works = () => {
             className="worksImg"
           />
           <h3>Syzygy Search Engine</h3>
+        </div>
+        <div className="worksItem">
+          <img
+            src={Portfolio_Stamp}
+            alt="Portfolio Website"
+            className="worksImg"
+          />
+          <h3>Portfolio Website</h3>
         </div>
         <div className="worksItem">
           <img
