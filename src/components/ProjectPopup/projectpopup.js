@@ -61,6 +61,7 @@ const ProjectPopup = ({ project, onClose }) => {
         )}
 
         <div className="popupTop">
+          <h3>{project.name}</h3>
           {project.images && project.images.length > 0 && (
             <img src={project.images[currentImageIndex]} alt={project.name} />
           )}
@@ -75,7 +76,6 @@ const ProjectPopup = ({ project, onClose }) => {
           </button>
         )}
         <div className="popupBottom">
-          <h3>{project.name}</h3>
           <p>{project.description}</p>
         </div>
       </div>
