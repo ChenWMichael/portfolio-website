@@ -1,6 +1,7 @@
 import React from "react";
 import "./projectpopup.css";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const ProjectPopup = ({ project, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -17,9 +18,27 @@ const ProjectPopup = ({ project, onClose }) => {
     }
   };
 
+  const handleContentClick = (e) => {
+    e.stopPropagation();
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      onClose();
+    };
+
+    // Add event listener when the component is mounted
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    // Remove event listener on cleanup
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [onClose]);
+
   return (
-    <div className="popupOverlay">
-      <div className="popupContent">
+    <div className="popupOverlay" onClick={onClose}>
+      <div className="popupContent" onClick={handleContentClick}>
         <button className="closeButton" onClick={onClose}>
           ×
         </button>
