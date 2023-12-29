@@ -2,7 +2,7 @@ import React from "react";
 import "./navigationbar.css";
 import { Link } from "react-scroll";
 import { ReactComponent as ContactIcon } from "./envelope.svg";
-import Menu from "./menu.png";
+import Menu from "./menu_gold.png";
 import { useState } from "react";
 
 const NavigationBar = () => {
