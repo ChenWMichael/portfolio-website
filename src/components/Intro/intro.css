@@ -42,9 +42,9 @@
 }
 
 .name {
-  color: #7ab8f1;
-  text-shadow: -1px -1px 0 #1e4d8f, 1px -1px 0 #1e4d8f, -1px 1px 0 #1e4d8f,
-    1px 1px 0 #1e4d8f;
+  color: gold;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .introText {
