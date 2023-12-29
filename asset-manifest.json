@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.165ac31e.css",
-    "main.js": "/portfolio-website/static/js/main.6e8f53c5.js",
+    "main.js": "/portfolio-website/static/js/main.93da5ce2.js",
     "static/media/sam altman screenshot.PNG": "/portfolio-website/static/media/sam altman screenshot.26bd5fb3faec123fbdc1.PNG",
     "static/media/ai ethics screenshot.PNG": "/portfolio-website/static/media/ai ethics screenshot.1ec1df797e2d2dd9e78d.PNG",
     "static/media/syzygy_stamp.png": "/portfolio-website/static/media/syzygy_stamp.bf1d344ada89d49fd6f3.png",
@@ -26,10 +26,10 @@
     "index.html": "/portfolio-website/index.html",
     "static/media/envelope.svg": "/portfolio-website/static/media/envelope.b2a8bdc6692ddcdb9d6d67aacd50ac8e.svg",
     "main.165ac31e.css.map": "/portfolio-website/static/css/main.165ac31e.css.map",
-    "main.6e8f53c5.js.map": "/portfolio-website/static/js/main.6e8f53c5.js.map"
+    "main.93da5ce2.js.map": "/portfolio-website/static/js/main.93da5ce2.js.map"
   },
   "entrypoints": [
     "static/css/main.165ac31e.css",
-    "static/js/main.6e8f53c5.js"
+    "static/js/main.93da5ce2.js"
   ]
 }
