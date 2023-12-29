@@ -141,7 +141,8 @@ const Works = () => {
       <span className="worksDesc">
         My portfolio presents a range of projects, from ambitious endeavors to
         smaller, fun experiments, each demonstrating my passion for coding and
-        continuous skill development. Click each project for more details.
+        continuous skill development. <br />
+        Click each project for more details.
       </span>
       <div className="worksImgs">
         {projects.map((project, index) => (

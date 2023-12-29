@@ -18,8 +18,10 @@
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   width: 60%;
-  max-width: 40%;
-  max-height: 70%;
+  max-width: 80%;
+  min-height: 30%;
+  max-height: 90%;
+  overflow: auto;
 }
 
 .closeButton {
@@ -62,6 +64,8 @@
 .popupBottom {
   text-align: left;
   color: white;
+  min-height: 20%;
+  height: auto;
 }
 
 .navButton {
@@ -81,4 +85,13 @@
 
 .rightButton {
   right: 10px;
+}
+
+@media (max-width: 1000px) {
+  .popupContent {
+    width: 95%; /* Full width on small screens */
+    height: 95%; /* Full height on small screens */
+    max-height: 95%; /* Override max-height for small screens */
+    padding: 10px; /* Adjust padding if necessary */
+  }
 }

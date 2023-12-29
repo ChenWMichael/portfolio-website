@@ -2,29 +2,34 @@ import React from "react";
 import "./projectpopup.css";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useRef } from "react";
 
 const ProjectPopup = ({ project, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const popupContentRef = useRef();
 
-  const handleRightArrowClick = () => {
+  const handleRightArrowClick = (e) => {
+    e.stopPropagation();
     if (project.images && currentImageIndex < project.images.length - 1) {
       setCurrentImageIndex(currentImageIndex + 1);
     }
   };
 
-  const handleLeftArrowClick = () => {
+  const handleLeftArrowClick = (e) => {
+    e.stopPropagation();
     if (currentImageIndex > 0) {
       setCurrentImageIndex(currentImageIndex - 1);
     }
   };
 
-  const handleContentClick = (e) => {
-    e.stopPropagation();
-  };
-
   useEffect(() => {
     const handleOutsideClick = (e) => {
-      onClose();
+      if (
+        popupContentRef.current &&
+        !popupContentRef.current.contains(e.target)
+      ) {
+        onClose();
+      }
     };
 
     // Add event listener when the component is mounted
@@ -38,7 +43,11 @@ const ProjectPopup = ({ project, onClose }) => {
 
   return (
     <div className="popupOverlay" onClick={onClose}>
-      <div className="popupContent" onClick={handleContentClick}>
+      <div
+        className="popupContent"
+        ref={popupContentRef}
+        onClick={(e) => e.stopPropagation()}
+      >
         <button className="closeButton" onClick={onClose}>
           ×
         </button>

@@ -2,7 +2,8 @@
   background: rgb(30, 30, 30);
   height: 4rem;
   width: 100vw;
-  max-width: 75rem;
+  /* max-width: 75rem; */
+  max-width: 100%;
   margin: 0 auto;
   padding: 1rem 0rem;
   display: flex;
