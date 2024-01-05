@@ -15,6 +15,10 @@ import portfolio_img2 from "./Portfolio Images/img_portfolio.PNG";
 import portfolio_img3 from "./Portfolio Images/img_resume.PNG";
 import portfolio_img4 from "./Portfolio Images/img_contact.PNG";
 import portfolio_img5 from "./Portfolio Images/img_mobile.PNG";
+import gsq_img1 from "./GSQ Images/home.PNG";
+import gsq_img2 from "./GSQ Images/home_join.PNG";
+import gsq_img3 from "./GSQ Images/home_create.PNG";
+import gsq_img4 from "./GSQ Images/session.PNG";
 
 const Works = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -66,6 +70,25 @@ const Works = () => {
         portfolio_img4,
         portfolio_img5,
       ],
+    },
+    {
+      name: "Group Sports Queue",
+      imgSrc: gsq_img1,
+      description: `
+      Group Sports Queue is a targeted web application, primarily designed for mobile 
+      browsers, developed to efficiently manage game queues in group sports environments. 
+      Conceived and built within three days, it is currently in its testing phase. The 
+      application skillfully combines a Node.js and Express.js backend with RESTful APIs 
+      for dynamic content and efficient data handling. The frontend, leveraging React.js 
+      and asynchronous JavaScript, enhances user engagement with a draggable/droppable 
+      queue feature, allowing for intuitive reordering of members. Hosted on Fly.io with 
+      MongoDB Atlas Cloud supporting the backend, Group Sports Queue excels in delivering 
+      real-time updates, keeping all participants synchronized. This application not only 
+      simplifies the organization of sports activities but also serves as an exemplary use 
+      of modern web development practices to address specific, practical needs in community 
+      sports settings.
+      `,
+      images: [gsq_img1, gsq_img2, gsq_img3, gsq_img4],
     },
     {
       name: "COVID-19 Data Analysis",
