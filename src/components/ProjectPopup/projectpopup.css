@@ -92,9 +92,9 @@
 
 @media (max-width: 1000px) {
   .popupContent {
-    width: 95%; /* Full width on small screens */
-    height: 95%; /* Full height on small screens */
-    max-height: 95%; /* Override max-height for small screens */
-    padding: 10px; /* Adjust padding if necessary */
+    width: 95%;
+    height: 95%;
+    max-height: 95%;
+    padding: 10px;
   }
 }
