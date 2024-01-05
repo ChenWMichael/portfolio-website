@@ -77,6 +77,11 @@ const ProjectPopup = ({ project, onClose }) => {
         )}
         <div className="popupBottom">
           <p>{project.description}</p>
+          project.url ? (
+          <a href={project.url} target="_blank" rel="noopener noreferrer">
+            Visit Project
+          </a>
+          ) : (<p>URL: Not available</p>)
         </div>
       </div>
     </div>

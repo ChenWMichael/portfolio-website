@@ -49,6 +49,7 @@ const Works = () => {
         " UI customization, make the Syzygy Search Engine a practical" +
         " tool for data retrieval and web navigation.",
       images: [Syzygy_Stamp, syzygy_img1, syzygy_img2, syzygy_img3],
+      url: null,
     },
     {
       name: "Portfolio Website",
@@ -70,6 +71,7 @@ const Works = () => {
         portfolio_img4,
         portfolio_img5,
       ],
+      url: null,
     },
     {
       name: "Group Sports Queue",
@@ -86,9 +88,10 @@ const Works = () => {
       real-time updates, keeping all participants synchronized. This application not only 
       simplifies the organization of sports activities but also serves as an exemplary use 
       of modern web development practices to address specific, practical needs in community 
-      sports settings. Visit the <a href="https://group-sports-queue.fly.dev/" target="_blank">Group Sports Queue</a> website.
+      sports settings.
       `,
       images: [gsq_img1, gsq_img2, gsq_img3, gsq_img4],
+      url: "https://group-sports-queue.fly.dev/",
     },
     {
       name: "COVID-19 Data Analysis",
@@ -109,6 +112,7 @@ const Works = () => {
         "was placed on efficient data management and memory usage, including techniques like " +
         "memoization, which are critical for handling large datasets effectively.",
       images: [Covid_Stamp],
+      url: null,
     },
     {
       name: "LC4 Reverse Assembler",
@@ -128,6 +132,7 @@ const Works = () => {
         "was pivotal in overcoming memory management challenges, ensuring the tool's integrity " +
         "and performance.",
       images: [LC4_Stamp],
+      url: null,
     },
     {
       name: "Battleship",
@@ -146,6 +151,7 @@ const Works = () => {
         "of object-oriented programming and software testing but also emphasized the importance " +
         "of user-centric design in software development.",
       images: [Battleship_Stamp],
+      url: null,
     },
   ];
 
