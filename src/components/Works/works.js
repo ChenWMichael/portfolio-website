@@ -86,7 +86,7 @@ const Works = () => {
       real-time updates, keeping all participants synchronized. This application not only 
       simplifies the organization of sports activities but also serves as an exemplary use 
       of modern web development practices to address specific, practical needs in community 
-      sports settings.
+      sports settings. Visit the <a href="https://group-sports-queue.fly.dev/" target="_blank">Group Sports Queue</a> website.
       `,
       images: [gsq_img1, gsq_img2, gsq_img3, gsq_img4],
     },
