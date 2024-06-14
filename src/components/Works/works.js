@@ -5,6 +5,8 @@ import LC4_Stamp from "./Stamps/lc4 stamp.png";
 import Battleship_Stamp from "./Stamps/battleship stamp.png";
 import Syzygy_Stamp from "./Stamps/syzygy_stamp.png";
 import Portfolio_Stamp from "../Intro/Logo.PNG";
+import PennSearch_Stamp from "../Stamps/UPenn_shield.png";
+import MRA_Stamp from "../Stamps/MRA_stamp.png";
 import { useState } from "react";
 import ProjectPopup from "../ProjectPopup/projectpopup";
 import syzygy_img1 from "./Syzygy Images/ai ethics screenshot.PNG";
@@ -52,6 +54,23 @@ const Works = () => {
       url: null,
     },
     {
+      name: "PennSearch",
+      imgSrc: PennSearch_Stamp,
+      description:
+        "The PennSearch project, featured in my portfolio, is a comprehensive network routing and " +
+        "distributed hash table (DHT) based search engine developed using the ns-3 discrete network simulator. " +
+        "The project integrates link-state (LS) and distance-vector (DV) routing protocols to manage dynamic " +
+        "network topologies, including features for neighbor discovery and routing table updates. PennSearch builds " +
+        "upon these protocols by implementing the Chord DHT overlay, enabling efficient node joins, departures, and " +
+        "stabilization within the ring. This peer-to-peer search engine effectively handles keyword-based document " +
+        "retrieval, managing and querying inverted indexes. Developed in C++ within a Docker containerized environment, " +
+        "PennSearch utilizes Git and GitHub for version control and collaboration. This project exemplifies advanced " +
+        "network protocol design and distributed system implementation, offering robust and scalable solutions for " +
+        "efficient data retrieval and network management.",
+      images: [PennSearch_Stamp],
+      url: null,
+    },
+    {
       name: "Portfolio Website",
       imgSrc: Portfolio_Stamp,
       description:
@@ -92,6 +111,28 @@ const Works = () => {
       `,
       images: [gsq_img1, gsq_img2, gsq_img3, gsq_img4],
       url: "https://group-sports-queue.fly.dev/",
+    },
+    {
+      name: "Medication Reminder App",
+      imgSrc: MRA_Stamp,
+      description:
+        `
+        Medications Reminder App is a cross-platform mobile application developed using React Native with Expo CLI, 
+        designed to streamline medication management and enhance adherence for users. The app features an intuitive 
+        user interface for easy tracking of medication schedules.
+        
+        Key features include user authentication via Firebase, medication schedule input, and real-time reminders. 
+        The HomeScreen displays a color-coded list of medications, indicating which need to be taken today based on 
+        the provided schedule. This provides users with a clear and actionable overview of their medication regimen. 
+        The app also employs React Navigation for seamless transitions between screens, enhancing the user experience.
+        
+        Currently in its testing phase within the Expo CLI environment, the Medications Reminder App leverages the 
+        strengths of React Native and Firebase to provide a secure, responsive, and engaging user experience. This 
+        project exemplifies modern mobile development practices, addressing a crucial aspect of personal healthcare 
+        management with practical and user-friendly solutions.
+        `,
+      images: [MRA_Stamp],
+      url: null,
     },
     {
       name: "COVID-19 Data Analysis",

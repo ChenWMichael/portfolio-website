@@ -16,7 +16,8 @@ const Resume = () => {
     <section id="resume">
       <h1 className="resumeTitle">My Resume</h1>
       <a
-        href={`${process.env.PUBLIC_URL}/Michael_Chen_resume_portfolio_2024.pdf`}
+        // href={`${process.env.PUBLIC_URL}/Michael_Chen_resume_portfolio_2024.pdf`}
+        href={`${process.env.PUBLIC_URL}/Michael_Chen_Portfolio_CV.pdf`}
         download="My_Resume.pdf"
         className="downloadLink"
       >
@@ -25,7 +26,8 @@ const Resume = () => {
       {windowWidth >= 840 && (
         <div className="resumeDisplay">
           <iframe
-            src={`${process.env.PUBLIC_URL}/Michael_Chen_resume_portfolio_2024.pdf`}
+            // src={`${process.env.PUBLIC_URL}/Michael_Chen_resume_portfolio_2024.pdf`}
+            src={`${process.env.PUBLIC_URL}/Michael_Chen_Portfolio_CV.pdf`}
             title="My Resume"
             width="50%"
             height="600px"
