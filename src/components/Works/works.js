@@ -21,6 +21,12 @@ import gsq_img1 from "./GSQ Images/home.PNG";
 import gsq_img2 from "./GSQ Images/home_join.PNG";
 import gsq_img3 from "./GSQ Images/home_create.PNG";
 import gsq_img4 from "./GSQ Images/session.PNG";
+import home_screen from "./MRA Images/HomeScreen.png";
+import login_screen from "./MRA Images/LoginScreen.png";
+import medication_screen from "./MRA Images/MedicationScreen.png";
+import addmedication_screen from "./MRA Images/AddMedicationScreen.png";
+import tracking_screen from "./MRA Images/TrackingScreen.png";
+
 
 const Works = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -131,7 +137,7 @@ const Works = () => {
         project exemplifies modern mobile development practices, addressing a crucial aspect of personal healthcare 
         management with practical and user-friendly solutions.
         `,
-      images: [MRA_Stamp],
+      images: [MRA_Stamp, login_screen, home_screen, medication_screen, addmedication_screen, tracking_screen],
       url: null,
     },
     {
